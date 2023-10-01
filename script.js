@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let rec = new webkitSpeechRecognition();
     rec.continuous = true;
-    rec.interimResults = true;
+    rec.interimResults = false;
     rec.lang = "ja-JP";
 
     let stopped = true;
@@ -87,7 +87,11 @@ document.addEventListener("DOMContentLoaded", function () {
           realtimeDiv.innerHTML = "";
           finalResultDiv.innerHTML = "";
           console.log(text);
-          if (/ぽんこつロボットくん|ポンコツろぼっとくん|ポンコツろぼっと君|ぽんこつロボット君/.test(text)) {
+          if (
+            /ぽんこつロボットくん|ポンコツろぼっとくん|ポンコツろぼっと君|ぽんこつロボット君/.test(
+              text
+            )
+          ) {
             finalResultDiv.setAttribute(
               "data-text",
               "＞" +
@@ -127,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
           setTimeout(() => {
             finalResultDiv.innerHTML = finalResultDiv.getAttribute("data-text");
-          }, 200); // 1000ミリ秒 = 1秒
+          }, 200);
           rec.stop();
         } else {
           interimTranscript += text;
