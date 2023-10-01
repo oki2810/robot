@@ -87,11 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
           realtimeDiv.innerHTML = "";
           finalResultDiv.innerHTML = "";
           console.log(text);
-          if (
-            /ぽんこつロボットくん|ポンコツろぼっとくん|ポンコツろぼっと君|ぽんこつロボット君/.test(
-              text
-            )
-          ) {
+          if (/ぽんこつ|ポンコツ/.test(text)) {
             finalResultDiv.setAttribute(
               "data-text",
               "＞" +
