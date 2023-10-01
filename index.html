@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <title>ぽんこつロボットくん</title>
+    <link rel="stylesheet" href="css/destyle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Kosugi+Maru&family=Zen+Kaku+Gothic+New&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="contentswrap" class="fade">
+      <main>
+        <div id="view" class="center-box">
+          <img
+            id="robot"
+            src="img/taiki.png"
+            alt="ぽんこつロボットくんの画像"
+          />
+        </div>
+        <div id="text">
+          <button id="btn">
+            <img id="mic" src="img/mute.png" alt="マイクボタン" />
+          </button>
+          <div id="result" data-speed="100">
+            <p id="realtime-result"></p>
+            <p id="final-result"></p>
+            <p>
+              この子はぽんこつロボットくん<br />あんまり便利な機能はありません<br />声をかけるといろんな反応をするよ
+            </p>
+          </div>
+        </div>
+        <div id="ex">
+          <h2>反応する言葉</h2>
+          <ul>
+            <li>挨拶（こんにちは、おはよう等）</li>
+            <li>誉め言葉（可愛い、かっこいい等）</li>
+            <li>名前（ぽんこつロボットくん）</li>
+          </ul>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

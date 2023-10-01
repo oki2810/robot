@@ -1,0 +1,119 @@
+body {
+  font-family: "Kosugi Maru", sans-serif;
+  background: #eaf0f1;
+  color: rgb(70, 70, 70);
+  letter-spacing: 0.08rem;
+  line-height: 1.8rem;
+}
+
+body.recording {
+  background: #f2d2d2;
+}
+
+p,
+li,
+h2 {
+  font-size: clamp(0.85rem, 3.5vw, 1rem);
+}
+
+#contentswrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  height: 100%;
+  width: 45em;
+  max-width: 90%;
+  background: #fff;
+  box-shadow: 0px 5px 15px 0px rgba(136, 134, 128, 0.35);
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 90%;
+  max-width: 40rem;
+}
+
+#ex {
+  margin: 0 auto;
+  max-width: 30rem;
+}
+
+#view {
+  background-color: #f8e8e5;
+  max-width: 25rem;
+  margin: 0 auto;
+  border: 2px solid #d3b3b3;
+  border-radius: 10px;
+}
+
+#robot {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+}
+
+h2 {
+  margin-left: 1.5em;
+}
+
+ul {
+  border: 2px solid rgb(148, 148, 148);
+  border-radius: 10px;
+  padding: 1% 11%;
+  position: relative;
+}
+
+ul li {
+  padding: 0.4em 0;
+  line-height: 1rem;
+}
+
+ul li:before {
+  content: "\f075";
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  left: 4%;
+  color: #f19591;
+}
+
+#mic {
+  width: 50%;
+}
+
+#text {
+  margin: 5% auto;
+  height: 35vh;
+  text-align: center;
+}
+
+#btn {
+  background: #fcb1b1;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  max-width: 100px;
+  aspect-ratio: 1 / 1;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3vh auto;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0px 5px 3px #8a8a8a;
+  transition: 0.3s;
+}
+
+#btn.recording,
+#btn:hover {
+  border: 2px solid #e29191;
+  box-shadow: none;
+  transform: translateY(3px);
+}
+
+#btn.recording {
+  background: white;
+}
